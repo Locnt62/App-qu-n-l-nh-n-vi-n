@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">qlnhanvien</string>
+    <string name="tendangnhap"> Tên đăng nhập</string>
+    <string name="hinttendangnhap">Nhập tài khoản</string>
+    <string name="hintmatkhau">Nhập mật khẩu</string>
+    <string name="dongy">Đồng ý</string>
+    <string name="thoat">Thoát</string>
+    <string name="titleDangKy">Đăng Ký</string>
+
+</resources>

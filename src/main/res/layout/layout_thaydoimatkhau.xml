@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="33dp"
+        android:text="Thiết lập mật khẩu"
+        android:textColor="#ffffff"/>
+
+    <ToggleButton
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tooglebutton1"
+        android:layout_alignBaseline="@+id/textview1"
+        android:layout_alignBottom="@+id/textview1"
+        android:layout_toRightOf="@+id/textview1"
+        android:background="@drawable/togglebackground"
+        android:textOn=""
+        android:textOff=""
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:id="@+id/khungthaydoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tooglebutton1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="42dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="42dp"
+            android:text="Tên đăng nhập"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview2"
+            android:layout_alignLeft="@+id/textview2"
+            android:layout_marginTop="22dp"
+            android:text="Mật khẩu:"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview3"
+            android:layout_alignLeft="@+id/textview3"
+            android:layout_marginTop="29dp"
+            android:text="Tên đăng nhập mới:"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textview5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview4"
+            android:layout_alignLeft="@+id/textview4"
+            android:layout_marginTop="20dp"
+            android:text="Mật khẩu mới:"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textview6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview5"
+            android:layout_alignLeft="@+id/textview5"
+            android:layout_marginTop="20dp"
+            android:text="Nhập lại mật khẩu:"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/textview2"
+            android:layout_alignBottom="@id/textview2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="-3dp"
+            android:layout_toRightOf="@id/textview2"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/textview3"
+            android:layout_alignBottom="@id/textview3"
+            android:layout_marginLeft="63dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toRightOf="@id/textview3"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/edit4"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/textview5"
+            android:layout_alignBottom="@id/textview5"
+            android:layout_marginLeft="36dp"
+            android:layout_marginBottom="-1dp"
+            android:layout_toRightOf="@id/textview5"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/edit5"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/textview6"
+            android:layout_alignBottom="@id/textview6"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toRightOf="@id/textview6"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/edit3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/textview4"
+            android:layout_alignBottom="@id/textview4"
+            android:layout_toRightOf="@id/textview4"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:text="Save"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

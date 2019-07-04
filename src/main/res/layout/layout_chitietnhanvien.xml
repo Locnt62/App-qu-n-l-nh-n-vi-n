@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#0000FF">
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/background_chitietnhanvien">
+
+        <ImageView
+            android:id="@+id/anhNV"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/person" />
+
+        <TextView
+            android:id="@+id/vCTTenNhanVien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/anhNV"
+            android:layout_toRightOf="@+id/anhNV"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ee1246"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Tên nhân viên"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/vCTTenNhanVien"
+            android:layout_below="@+id/vCTTenNhanVien"
+            android:text="Số điện thoại"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:id="@+id/vCTSoDienThoai"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vCTGioiTinh"
+            android:layout_alignLeft="@+id/vCTSoDienThoai"
+            android:layout_below="@+id/vCTSoDienThoai"
+            android:padding="5dp"
+            android:text="Gioi tính"/>
+
+
+    </RelativeLayout>
+
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/background_chitietnhanvien">
+        <TableRow android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/vCTEmail"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#ee1246"
+                android:text="Email :"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hiển thị email"
+                android:id="@+id/vHTEmail"/>
+        </TableRow>
+
+        <TableRow android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line">
+            <TextView
+                android:layout_width="wrap_content"
+                android:height="1dp"/>
+
+        </TableRow>
+
+        <TableRow android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/vCTDiaChi"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#ee1246"
+                android:text="Địa chỉ :"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hiển thị địa chỉ"
+                android:id="@+id/vHTDiaChi"/>
+        </TableRow>
+
+        <TableRow android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line">
+            <TextView
+                android:layout_width="wrap_content"
+                android:height="1dp"/>
+
+        </TableRow>
+
+        <TableRow android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/vCTNgaySinh"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#ee1246"
+                android:text="Ngày sinh :"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hiển thị ngày sinh"
+                android:id="@+id/vHTNgaySinh"/>
+        </TableRow>
+
+        <TableRow android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line">
+            <TextView
+                android:layout_width="wrap_content"
+                android:height="1dp"/>
+
+        </TableRow>
+
+        <TableRow android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/vCTLuong"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#ee1246"
+                android:text="Lương :"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hiển thị lương"
+                android:id="@+id/vHTLuong"/>
+        </TableRow>
+
+        <TableRow android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line">
+            <TextView
+                android:layout_width="wrap_content"
+                android:height="1dp"/>
+
+        </TableRow>
+
+        <TableRow android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/vCTPhongBan"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#ee1246"
+                android:text="Mã phòng ban :"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hiển thị phòng ban"
+                android:id="@+id/vHTPhongBan"/>
+        </TableRow>
+
+        <TableRow android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line">
+            <TextView
+                android:layout_width="wrap_content"
+                android:height="1dp"/>
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+</LinearLayout>

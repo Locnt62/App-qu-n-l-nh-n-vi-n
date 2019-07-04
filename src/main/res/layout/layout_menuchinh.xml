@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#6666DB">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_margin="23dp"
+        android:background="@drawable/background_chitietnhanvien">
+
+        <ImageView
+            android:id="@+id/anhNV"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="38dp"
+            android:src="@drawable/person" />
+
+        <TextView
+            android:id="@+id/tvApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/anhNV"
+            android:layout_toRightOf="@+id/anhNV"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:textColor="#ee1246"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Chào mừng đến ứng dụng quản lý nhân viên"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/background_chitietnhanvien">
+
+        <Button
+            android:id="@+id/btnPB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="60dp"
+            android:layout_marginBottom="50dp"
+            android:text="Phòng Ban"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNV"
+            android:layout_alignBaseline="@+id/btnPB"
+            android:layout_toRightOf="@+id/btnPB"
+            android:text="Nhân Viên"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMK"
+           android:layout_below="@+id/btnPB"
+            android:layout_toRightOf="@+id/btnPB"
+            android:text="Mật khẩu"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDX"
+            android:layout_alignBaseline="@+id/btnMK"
+        android:layout_marginLeft="65dp"
+            android:text="Đăng Xuất"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

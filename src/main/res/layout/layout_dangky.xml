@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height = "match_parent" android:paddingLeft= "8dp"
+    android:paddingRight = "8dp"
+    android:paddingTop = "8dp"
+    android:paddingBottom = "8dp" tools:context = ".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTaiKhoanDK"
+        android:inputType="textPersonName"
+        android:hint="Nhập tên tài khoản"
+        android:layout_alignParentTop = "true"
+        android:layout_centerHorizontal = "true"
+        android:layout_margin="10dp"
+        />
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editMatKhauDK"
+        android:hint="Nhập mật khẩu đăng ký"
+        android:layout_below="@+id/editTaiKhoanDK"
+        android:layout_margin="10dp"
+        android:layout_alignParentLeft = "true"
+        android:layout_alignParentStart = "true"
+        android:layout_alignParentRight = "true"
+        android:layout_alignParentEnd = "true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editNhapLaiMatKhauDK"
+        android:hint="Nhập lại mật khẩu đăng ký"
+        android:layout_below="@+id/editMatKhauDK"
+        android:layout_margin="10dp"
+        android:layout_alignParentLeft = "true"
+        android:layout_alignParentStart = "true"
+        android:layout_alignParentRight = "true"
+        android:layout_alignParentEnd = "true"/>
+
+    <Button
+        android:id="@+id/btnDangKy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editNhapLaiMatKhauDK"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+
+        android:layout_margin="10dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="35dp"
+        android:text="Đăng ký" />
+
+    <Button
+        android:id="@+id/btnThoat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editNhapLaiMatKhauDK"
+
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Thoát" />
+    
+
+</RelativeLayout>
